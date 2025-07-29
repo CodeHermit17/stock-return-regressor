@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 def load_data(file_path: str):
+
     np.set_printoptions(formatter={'float_kind': '{:.2f}'.format})
     
     df = pd.read_csv(file_path)
