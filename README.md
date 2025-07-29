@@ -36,22 +36,12 @@ This project aims to **predict the next-day percentage return of a stock** using
 ## 📁 Project Structure
 
 stock-return-regressor/
-├── data/
-│ ├── raw/ # Original stock CSVs (e.g., HDFCBANK.NS.csv)
-│ └── processed/ # Cleaned data with SMA, RSI, and returns
-├── models/
-│ └── theta.npy # Saved weights for scratch model
-├── results/
-│ ├── loss_vs_epochs_lr_0p001.png
-│ └── compare_scratch_vs_sklearn.png
-├── src/
-│ ├── regression_model.py # Linear Regression (Scratch)
-│ ├── prepare_data.py # Adds SMA, RSI, returns
-│ ├── data_loader.py # Loads + splits processed data
-│ ├── train.py # Trains model and logs loss
-│ └── evaluate.py # Compares scratch vs sklearn
-├── requirements.txt
-└── README.md
+- data/ # Raw & processed stock data (CSV)
+- src/ # Custom ML modules & training pipeline
+- models/ # Saved weights (theta.npy)
+- results/ # Accuracy & loss plots
+- README.md
+- requirements.txt
 
 ---
 
